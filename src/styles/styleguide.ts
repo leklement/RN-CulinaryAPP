@@ -18,6 +18,9 @@ const FONT = {
     fontSize: 24,
     marginBottom: 10,
   },
+  h2: {
+    fontSize: 19,
+  },
   input: {
     height: 36,
     fontSize: 14,

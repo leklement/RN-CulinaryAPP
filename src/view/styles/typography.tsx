@@ -3,6 +3,7 @@ const COLOR = {
   Primary: '#565656',
   Secondary: '#399BE0',
   Default: '#FFFFFF',
+  DefaultDark: '#000000',
   DefaultSelected: '#222222',
   Border: '#E7E7E8',
   Success: '#2BC480',
@@ -17,6 +18,12 @@ const FONT = {
   h1: {
     fontSize: 24,
     marginBottom: 10,
+  },
+  h2: {
+    fontSize: 19,
+  },
+  h3: {
+    fontSize: 17,
   },
   input: {
     height: 36,

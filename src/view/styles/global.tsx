@@ -76,6 +76,16 @@ const FONTS = StyleSheet.create({
     fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.DefaultSelected,
   },
+  h2: {
+    ...TYPOGRAPHY.FONT.h2,
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.DefaultDark
+  },
+  h3: {
+    ...TYPOGRAPHY.FONT.h3,
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.DefaultDark
+  },
   body: {
     fontSize: 14,
     fontFamily: TYPOGRAPHY.FONT.Primary,

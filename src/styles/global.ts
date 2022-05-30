@@ -30,7 +30,7 @@ const ELEMENTS = StyleSheet.create({
   CategoryIcons: {
     alignItems: 'center',
     marginRight: TYPOGRAPHY.ELEMENTS.CategoryIcons.marginRight,
-  },
+  }
 });
 
 const CTA = {

@@ -23,13 +23,44 @@ const showPushScreen = ({ componentId, passProps = {} }: INavigation) => {
       },
       options: {
         topBar: {
-          visible: true,
+          visible: false,
         },
       },
     },
   });
 };
 
+
+const pushCounterScreen = ({ componentId, passProps = {} }: INavigation) => {
+  Navigation.push(componentId, {
+    component: {
+      name: SCREENS.Creation,
+      id: SCREENS.Creation,
+      passProps: {
+        ...passProps,
+      },
+      options: {
+        topBar: {
+          visible: true,
+          background: {
+            color:"#075669",
+          },
+          borderColor: "#075669",
+          elevation: 0,
+          noBorder: true,
+          scrollEdgeAppearance: {
+            active: false,
+            borderColor: "#075669",
+            noBorder: true
+          }
+        },
+        bottomTabs: {
+          visible: false,
+        }
+      },
+    },
+  });
+};
 /**
  * Router method to show a screen by pushing on top of current stack
  * @param {object} params i.e {componentId is compulsory, passProps is optional},
@@ -79,6 +110,7 @@ const ROUTER = {
   push,
   popToRoot,
   showListingsScreen,
+  pushCounterScreen
 };
 
 export default ROUTER;

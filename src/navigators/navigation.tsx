@@ -14,7 +14,7 @@ export const STATUS_BAR_OPTIONS = {
 export const showSplash = () => {
   Navigation.setRoot({
     root: {
-      component: { name: SCREENS.Splash },
+      component: { name: SCREENS.Splash},
     },
   });
 };
@@ -29,7 +29,7 @@ export const tabbedNavigation = () =>
             children: [
               {
                 stack: {
-                  children: [
+                  children: [  
                     {
                       component: {
                         name: SCREENS.Home,
@@ -37,13 +37,19 @@ export const tabbedNavigation = () =>
                           text: 'This is Home',
                         },
                       },
-                    },
+                    },              
                   ],
                   options: {
                     topBar: {
                       visible: false,
-                      drawBehind: true,
-                      animate: true,
+                      borderColor: "#075669",
+                      elevation: 0,
+                      noBorder: true,
+                      scrollEdgeAppearance: {
+                        active: false,
+                        borderColor: "#075669",
+                        noBorder: true
+                      }
                     },
                     bottomTab: {
                       fontSize: 14,
